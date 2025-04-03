@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Sultan Ahmed - Frontend Developer</title>
+
+    <style>
+        /* Modern CSS with Flexbox */
+        :root {
+            --primary: #2E3A8C;
+            --secondary: #4CAF50;
+            --dark: #333;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-size: 2.2em;
+        }
+        
+        .title {
+            color: var(--gray);
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .contact-info a {
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+        
+        section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .job, .project, .education {
+            margin-bottom: 20px;
+        }
+        
+        .job-title, .project-title, .degree {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .company, .tech-stack {
+            color: var(--gray);
+            font-style: italic;
+        }
+        
+        .date {
+            color: var(--gray);
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .job-title, .project-title, .degree {
+                flex-direction: column;
+            }
+            
+            .date {
+                margin-top: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sultan Ahmed</h1>
+            <p class="title">Frontend Developer | React & Next.js Specialist</p>
+            <div class="contact-info">
+                <a href="tel:+923102233292">📞 0310-2233292</a>
+                <a href="mailto:faizanmedico@gmail.com">✉ faizanmedico@gmail.com</a>
+                <a href="https://github.com/sultanmedico" target="_blank">🔗 github.com/sultanmedico</a>
+                <a href="#" target="_blank">🌐 Portfolio (Coming Soon)</a>
+            </div>
+        </header>
+        
+        <section>
+            <h2>About Me</h2>
+            <p>Passionate frontend developer with strong foundation in JavaScript and modern frameworks. Currently specializing in React.js and Next.js to build performant web applications. Enthusiastic about clean code, responsive design, and continuous learning.</p>
+        </section>
+        
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript (ES6+)</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">React.js</span>
+                <span class="skill">Next.js</span>
+                <span class="skill">Git</span>
+                <span class="skill">Responsive Design</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <div class="job-title">
+                    <span>IT & Web Solutions Manager</span>
+                    <span class="date">2023 - Present</span>
+                </div>
+                <div class="company">CBOG (Sultan International Business Organization)</div>
+                <ul>
+                    <li>Managed frontend development for business applications using vanilla JavaScript</li>
+                    <li>Optimized web dashboard performance, reducing load time by 15%</li>
+                    <li>Collaborated with teams to implement IT solutions improving workflow efficiency</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Projects</h2>
+            <div class="project">
+                <div class="project-title">
+                    <span>E-Commerce Store (React/Next.js)</span>
+                </div>
+                <div class="tech-stack">React, Next.js, CSS Modules</div>
+                <ul>
+                    <li>Built product catalog with dynamic filtering using React hooks</li>
+                    <li>Implemented server-side rendering for better SEO performance</li>
+                    <li>Deployed on Vercel with CI/CD pipeline</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <div class="project-title">
+                    <span>Task Manager App</span>
+                </div>
+                <div class="tech-stack">React, TypeScript, Local Storage</div>
+                <ul>
+                    <li>Developed CRUD functionality with type-safe TypeScript code</li>
+                    <li>Reduced runtime errors by 20% through strict typing</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Education</h2>
+            <div class="education">
+                <div class="degree">
+                    <span>B.Sc. Physics, Chemistry, Mathematics</span>
+                    <span class="date">Graduated</span>
+                </div>
+                <div class="company">Urdu College, Karachi</div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Currently Learning</h2>
+            <ul>
+                <li>Advanced React patterns (Custom Hooks, Context API)</li>
+                <li>Next.js server-side rendering and static generation</li>
+                <li>State management solutions (Redux, Zustand)</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector('header').innerHTML += `
+        <button id="themeToggle" style="margin-top:15px;padding:5px 10px;cursor:pointer">
+            ðŸŒ™ Dark Mode
+        </button>`;
+        
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const button = document.getElementById('themeToggle');
+            if(document.body.classList.contains('dark-mode')){
+                button.textContent = 'ðŸ›¡ Light Mode';
+            }else{
+                button.textContent = 'ðŸŒ™ Dark Mode';
+            }
+
+        });
+    </script>
+
+
+
+</body>
+</html>

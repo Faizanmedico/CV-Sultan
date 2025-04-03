@@ -1,0 +1,20 @@
+
+
+
+  :root {
+    --primary: #2E3A8C;  /* Main theme color */
+    --secondary: #4CAF50; /* Accent color */
+}
+
+
+
+.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+.dark-mode .container {
+    background: #333;
+    color: #eee;
+}
+
+
